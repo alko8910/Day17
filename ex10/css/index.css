@@ -2,89 +2,181 @@
     box-sizing: border-box;
   }
   
-body{
-    width:max-content;
-    background-image: url('https://image.ibb.co/cO9Lxq/login-bg.jpg');
-    margin: 0;
-    padding:0;
-
-}
-.wrapper {
+  body {
+    font-weight: 300;
+    background: #181818;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  #wrapper {
     display: flex;
     flex-direction: row;
-    padding: 50px 100px;
-}
+  }
+  
+  #left {
+    display: flex;
+    flex-direction: column;
+    flex: 1.25;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #right {
+    flex: 2;
+  }
+  
+  #signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+  }
+  
 
-.logo{
-    margin-bottom: 50px;
-}
-label{
-    padding-top: 30px;
-    color: white;
+  #signin form {
+    width: 80%;
+    padding-bottom: 3rem;
+  }
+  
+  #signin .logo {
+    margin-bottom: 8vh;
+  }
+  
+  #signin .logo img {
+    width: 300px;
+  }
+  
+  #signin label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+  
+  #signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+  }
+  
+  #signin .primary-btn {
+    width: 100%;
+  }
+  
+  #signin .secondary-btn,
+  .or,
+  .links {
+    width: 60%;
+  }
+
+  
+  #signin .links a {
     display: block;
-}
-.text-input{
-    width: 400px;
-    height: 30px;
-    background-color: black;
-    border: 1px solid white;
-    margin-top: 5px;
-}
-.primaty-btn{
-    width: 400px;
-    background-color:rgb(5, 143, 255);
-    margin-top: 20px;
-    margin-bottom: 50px;
-    height: 35px;
-    color: white;
-}
-.links{
-    display: grid;
+    color: rgb(63, 63, 245);
+    text-decoration: none;
+    margin-bottom: 1rem;
     text-align: center;
-    margin-bottom: 25px;
-}
-.links a{
-    text-decoration: none;
-    color: rgb(5, 143, 255);
-}
-.secundary-btn{
-    margin-top: 15px;
-    width: 400px;
-    height: 30px;
-    background-color: rgb(156, 152, 149);
-}
-
-.secundary-btn > a {
-    color: white;
-    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  #signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+  }
+  
+  #signin .or .bar {
+    flex: auto;
     border: none;
-}
-#main-footer {
-    padding-top: 40px;
-    color: white;
+    height: 1px;
+    background: #aaa;
+  }
+  
+  #signin .or span {
+    color: #ccc;
+    padding: 0 0.8rem;
+  }
+  
+  #showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg');
+    height: 100vh;
     text-align: center;
-    font-size: 12px;
-}
-
-#main-footer div a {
+  }
+  
+  #showcase .showcase-text {
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+  
+  #showcase .secondary-btn {
+    width: 60%;
+    margin: auto;
+  }
+  
+  #main-footer {
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 5rem;
+  }
+  
+  #main-footer a {
     color: white;
+    text-decoration: underline;
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+  
+  .primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: rgb(63, 63, 245);
+    color: #fff;
     text-decoration: none;
-    margin-left: 7px;
-}
-
-
-.showcase-text {
-    color: white;
-}
-#showcase{
-    position: absolute;
-  left: 55%;
-  top: 45%;
-}
-
-.secundary-btn {
-    margin-top: 15px;
-    width: 400px;
-    height: 30px;
-    background-color: rgb(156, 152, 149);
-}
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  .primary-btn:hover {
+    background-color: rgb(49, 49, 212);
+  }
+  
+  .secondary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    background-color: grey;
+  }
+  
+  .secondary-btn:hover {
+    border-color: #ff7b39;
+    color: #ff7b39;
+  }
